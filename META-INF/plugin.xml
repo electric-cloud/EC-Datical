@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <key>EC-Datical</key>
+  <version>1.0.0.24</version>
+  <label>EC-Datical</label>
+  <description>ElectricFlow integration with DaticalDB</description>
+  <author>A. Malik</author>
+  <authorUrl>mailto:plugins@electric-cloud.com</authorUrl>
+
+  <commander-version min="7.0"/>
+
+    <!-- Specify a category for this plugin; this is used in filtered lists in the Plugin Manager.
+         Typically, it is set to System or Step.
+     -->
+  <category>Database</category>
+  <depends>EC-Core</depends>
+</plugin>

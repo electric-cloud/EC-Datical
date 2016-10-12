@@ -1,0 +1,658 @@
+<exportedData buildLabel="build_main_111324_2016.09.30_11:11:18" buildVersion="7.0.0.111324" passkey="575b688fc7a1b2af6636895124c7d6f59cf7d43a" version="78">
+  <exportPath>/projects/Datical</exportPath>
+  <project>
+    <procedure>
+      <description></description>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\repl</defaultValue>
+        <description>The path on the resource where DaticalDB is installed. This path is used to provide where &quot;hammer.bat&quot; located.
+E.g., C:\Users\Administrator\DaticalDB\rep</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalInstallPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\plugins</defaultValue>
+        <description>Path where Datical plugins are installed. This path is is used for &quot;--driver&quot; argument.
+E.g., C:\Users\Administrator\DaticalDB\plugins</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalPluginsPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <jobNameTemplate></jobNameTemplate>
+      <procedureName>Check Drivers</procedureName>
+      <propertySheet>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <propertySheet>
+            <property>
+              <propertyName>parameters</propertyName>
+              <propertySheet>
+                <property>
+                  <propertyName>daticalDeploymentStep</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalInstallPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalPluginsPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <tracked>1</tracked>
+              </propertySheet>
+              <tracked>1</tracked>
+            </property>
+            <tracked>1</tracked>
+          </propertySheet>
+          <tracked>1</tracked>
+        </property>
+        <tracked>1</tracked>
+      </propertySheet>
+      <resourceName></resourceName>
+      <step>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[daticalInstallPath]\hammer.bat --drivers=$[daticalPluginsPath] checkdrivers
+</command>
+        <condition></condition>
+        <description>c:\Users\Administrator\DaticalDB\repl\hammer.bat --drivers=C:\Users\Administrator\DaticalDB\plugins checkdrivers</description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor></postProcessor>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName></resourceName>
+        <shell></shell>
+        <stepName>Check Drivers</stepName>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workingDirectory></workingDirectory>
+        <workspaceName></workspaceName>
+      </step>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>1</tracked>
+      <workspaceName></workspaceName>
+    </procedure>
+    <procedure>
+      <description></description>
+      <formalParameter>
+        <defaultValue></defaultValue>
+        <description>The name of the Deployment Step in DaticalDB</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalDeploymentStep</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\repl</defaultValue>
+        <description>The path on the resource where DaticalDB is installed. This path is used to provide where &quot;hammer.bat&quot; located.
+E.g., C:\Users\Administrator\DaticalDB\rep</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalInstallPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\plugins</defaultValue>
+        <description>Path where Datical plugins are installed. This path is is used for &quot;--driver&quot; argument.
+E.g., C:\Users\Administrator\DaticalDB\plugins</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalPluginsPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\datical\HelloWorld</defaultValue>
+        <description>The path on the resources for the Datical project. E.g., C:\Users\Administrator\datical\HelloWorld</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalProjectPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <jobNameTemplate></jobNameTemplate>
+      <procedureName>Deploy</procedureName>
+      <propertySheet>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <propertySheet>
+            <property>
+              <propertyName>parameters</propertyName>
+              <propertySheet>
+                <property>
+                  <propertyName>daticalDeploymentStep</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalInstallPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalPluginsPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalProjectPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <tracked>1</tracked>
+              </propertySheet>
+              <tracked>1</tracked>
+            </property>
+            <tracked>1</tracked>
+          </propertySheet>
+          <tracked>1</tracked>
+        </property>
+        <tracked>1</tracked>
+      </propertySheet>
+      <resourceName></resourceName>
+      <step>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[daticalInstallPath]\hammer.bat --drivers=$[daticalPluginsPath] deploy $[daticalDeploymentStep]
+</command>
+        <condition></condition>
+        <description>c:\Users\Administrator\DaticalDB\repl\hammer.bat --drivers=C:\Users\Administrator\DaticalDB\plugins deploy Dev</description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp --loadProperty /myProject/postp/deploy</postProcessor>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName></resourceName>
+        <shell></shell>
+        <stepName>Deploy</stepName>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workingDirectory>$[daticalProjectPath]</workingDirectory>
+        <workspaceName></workspaceName>
+      </step>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>1</tracked>
+      <workspaceName></workspaceName>
+    </procedure>
+    <procedure>
+      <description></description>
+      <formalParameter>
+        <defaultValue></defaultValue>
+        <description>The name of the Deployment Step in DaticalDB</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalDeploymentStep</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\repl</defaultValue>
+        <description>The path on the resource where DaticalDB is installed. This path is used to provide where &quot;hammer.bat&quot; located.
+E.g., C:\Users\Administrator\DaticalDB\rep</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalInstallPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\DaticalDB\plugins</defaultValue>
+        <description>Path where Datical plugins are installed. This path is is used for &quot;--driver&quot; argument.
+E.g., C:\Users\Administrator\DaticalDB\plugins</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalPluginsPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <defaultValue>C:\Users\Administrator\datical\HelloWorld</defaultValue>
+        <description>The path on the resources for the Datical project. E.g., C:\Users\Administrator\datical\HelloWorld</description>
+        <expansionDeferred>0</expansionDeferred>
+        <formalParameterName>daticalProjectPath</formalParameterName>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <jobNameTemplate></jobNameTemplate>
+      <procedureName>Forecast</procedureName>
+      <propertySheet>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <propertySheet>
+            <property>
+              <propertyName>parameters</propertyName>
+              <propertySheet>
+                <property>
+                  <propertyName>daticalDeploymentStep</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalInstallPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalPluginsPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <property>
+                  <propertyName>daticalProjectPath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <counter>0</counter>
+                      <expandable>1</expandable>
+                      <propertyName>formType</propertyName>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                    <tracked>1</tracked>
+                  </propertySheet>
+                  <tracked>1</tracked>
+                </property>
+                <tracked>1</tracked>
+              </propertySheet>
+              <tracked>1</tracked>
+            </property>
+            <tracked>1</tracked>
+          </propertySheet>
+          <tracked>1</tracked>
+        </property>
+        <tracked>1</tracked>
+      </propertySheet>
+      <resourceName></resourceName>
+      <step>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[daticalInstallPath]\hammer.bat --drivers=$[daticalPluginsPath] forecast $[daticalDeploymentStep]
+</command>
+        <condition></condition>
+        <description>c:\Users\Administrator\DaticalDB\repl\hammer.bat --drivers=C:\Users\Administrator\DaticalDB\plugins forecast Dev</description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp --loadProperty /myProject/postp/forecast</postProcessor>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName></resourceName>
+        <shell></shell>
+        <stepName>Forecast</stepName>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workingDirectory>$[daticalProjectPath]</workingDirectory>
+        <workspaceName></workspaceName>
+      </step>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>1</tracked>
+      <workspaceName></workspaceName>
+    </procedure>
+    <procedure>
+      <description></description>
+      <jobNameTemplate></jobNameTemplate>
+      <procedureName>Sample 1</procedureName>
+      <propertySheet>
+        <tracked>1</tracked>
+      </propertySheet>
+      <resourceName></resourceName>
+      <step>
+        <actualParameters>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalInstallPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\repl</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalPluginsPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\plugins</value>
+          </property>
+          <tracked>1</tracked>
+        </actualParameters>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <parallel>0</parallel>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName>local</resourceName>
+        <stepName>checkdrivers</stepName>
+        <subprocedure>Check Drivers</subprocedure>
+        <subproject></subproject>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workspaceName></workspaceName>
+      </step>
+      <step>
+        <actualParameters>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalDeploymentStep</propertyName>
+            <tracked>1</tracked>
+            <value>Dev</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalInstallPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\repl</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalPluginsPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\plugins</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalProjectPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\datical\HelloWorld</value>
+          </property>
+          <tracked>1</tracked>
+        </actualParameters>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <parallel>0</parallel>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName>local</resourceName>
+        <stepName>forecast</stepName>
+        <subprocedure>Forecast</subprocedure>
+        <subproject></subproject>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workspaceName></workspaceName>
+      </step>
+      <step>
+        <actualParameters>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalDeploymentStep</propertyName>
+            <tracked>1</tracked>
+            <value>Dev</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalInstallPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\repl</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalPluginsPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\DaticalDB\plugins</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <expandable>1</expandable>
+            <propertyName>daticalProjectPath</propertyName>
+            <tracked>1</tracked>
+            <value>C:\Users\Administrator\datical\HelloWorld</value>
+          </property>
+          <tracked>1</tracked>
+        </actualParameters>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <parallel>0</parallel>
+        <precondition></precondition>
+        <propertySheet>
+          <tracked>1</tracked>
+        </propertySheet>
+        <releaseMode>none</releaseMode>
+        <resourceName>local</resourceName>
+        <stepName>deploy</stepName>
+        <subprocedure>Deploy</subprocedure>
+        <subproject></subproject>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
+        <workspaceName></workspaceName>
+      </step>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>1</tracked>
+      <workspaceName></workspaceName>
+    </procedure>
+    <projectName>EC-Datical</projectName>
+    <propertySheet>
+      <property>
+        <description></description>
+        <propertyName>postp</propertyName>
+        <propertySheet>
+          <property>
+            <counter>0</counter>
+            <description></description>
+            <expandable>1</expandable>
+            <propertyName>deploy</propertyName>
+            <tracked>1</tracked>
+            <value>push (@::gMatchers,
+    {
+      id      =&gt; &quot;deployReport&quot;,
+      pattern =&gt; q{Report ready at (.*)},
+      action  =&gt; q{	setProperty(&quot;/myJob/report-urls/deployReport&quot;, &quot;$1&quot;);
+			setProperty(&quot;summary&quot;, &quot;&lt;html&gt;&lt;b&gt;&lt;a href=\&quot;$1\&quot;&gt;Deploy Report&lt;/a&gt;&lt;/b&gt;&lt;/html&gt;&quot;);
+		}
+    }
+);</value>
+          </property>
+          <property>
+            <counter>0</counter>
+            <description></description>
+            <expandable>1</expandable>
+            <propertyName>forecast</propertyName>
+            <tracked>1</tracked>
+            <value>push (@::gMatchers,
+    {
+      id      =&gt; &quot;forecastReport&quot;,
+      pattern =&gt; q{Report ready at (.*)},
+      action  =&gt; q{	setProperty(&quot;/myJob/report-urls/forecastReport&quot;, &quot;$1&quot;);
+			setProperty(&quot;summary&quot;, &quot;&lt;html&gt;&lt;a href=\&quot;$1\&quot;&gt;Forecast Report&lt;/a&gt;&lt;/html&gt;&quot;);
+		}
+    }
+);</value>
+          </property>
+          <tracked>1</tracked>
+        </propertySheet>
+        <tracked>1</tracked>
+        <value>use Cwd;
+use File::Spec;
+use POSIX;
+my $dir = getcwd;
+my $logfile =&quot;&quot;;
+my $pluginDir;
+if(defined $ENV{QUERY_STRING}) { # Promotion through UI
+       $pluginDir = $ENV{COMMANDER_PLUGINS} . &quot;/$pluginName&quot;;
+
+} else {
+       $pluginDir = $dir;
+}
+
+$commander-&gt;setProperty(&quot;/plugins/$pluginName/project/pluginDir&quot;,{value=&gt;$pluginDir});
+$logfile .= &quot;Plugin Name: $pluginName\n&quot;;
+$logfile .= &quot;Current directory: $dir\n&quot;;
+
+# Evaluate promote.groovy or demote.groovy based on whether plugin is being promoted or demoted ($promoteAction)
+local $/ = undef;
+# If env variable QUERY_STRING exists:
+if(defined $ENV{QUERY_STRING}) { # Promotion through UI
+       open FILE, $ENV{COMMANDER_PLUGINS} . &quot;/$pluginName/dsl/$promoteAction.groovy&quot; or die &quot;Couldn't open file: $!&quot;;
+} else {  # Promotion from the command line
+       open FILE, &quot;dsl/$promoteAction.groovy&quot; or die &quot;Couldn't open file: $!&quot;;
+}
+my $dsl = &lt;FILE&gt;;
+close FILE;
+my $dslReponse = $commander-&gt;evalDsl($dsl,
+              {parameters=&gt;qq(
+                     {
+                           &quot;pluginName&quot;:&quot;$pluginName&quot;
+                     }
+              )}
+)-&gt;findnodes_as_string(&quot;/&quot;);
+$logfile .= $dslReponse;
+
+# Create output property
+
+my $nowString = localtime;
+$commander-&gt;setProperty(&quot;/plugins/$pluginName/project/logs/$nowString&quot;,{value=&gt;$logfile});
+</value>
+      </property>
+      <tracked>1</tracked>
+    </propertySheet>
+    <tracked>1</tracked>
+  </project>
+</exportedData>
