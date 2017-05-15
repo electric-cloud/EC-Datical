@@ -14,7 +14,6 @@ project pluginName, {
 	description = 'ElectricFlow integration with DaticalDB.'
 	ec_visibility = 'pickListOnly'
 
-	property 'version', value = '1.1.0'
 	property 'postp', {
 		property 'deploy', value: new File(pluginDir + "/dsl/properties/postp/deploy.pl").text
 		property 'forecast', value: new File(pluginDir + "/dsl/properties/postp/forecast.pl").text
