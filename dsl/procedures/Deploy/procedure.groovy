@@ -38,7 +38,7 @@ E.g., C:\\Users\\Administrator\\DaticalDB\\plugins''',
     command: new File(pluginDir + "/dsl/procedures/Deploy/steps/Deploy.pl").text,
     postProcessor: 'postp --loadProperty /myProject/postp/deploy',
     resourceName: '$[resource]',
-    shell: ''
+    shell: 'ec-perl'
 
   step 'copyReportToWorkspace',
     command: new File(pluginDir + "/dsl/procedures/Deploy/steps/copyReportToWorkspace.pl").text,

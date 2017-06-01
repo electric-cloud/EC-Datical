@@ -16,4 +16,4 @@ if ($osIsWindows) {
   $hammerPath='$[daticalInstallPath]/hammer';
 }
 
-system($hammerPath . ' --project \"$[daticalProjectPath]\" --drivers \"$[daticalPluginsPath]\" forecast \"$[daticalDeploymentStep]\"');
+system($hammerPath . ' --drivers=\"$[daticalPluginsPath]\" checkdrivers')

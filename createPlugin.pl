@@ -10,7 +10,7 @@ use ElectricCommander ();
 $| = 1;
 my $ec = new ElectricCommander->new();
 
-my $pluginVersion = "1.1.0";
+my $pluginVersion = "1.2.0";
 my $pluginKey = "EC-Datical";
 my $description = "ElectricFlow integration with DaticalDB.";
 GetOptions ("version=s" => \$pluginVersion,
@@ -26,7 +26,6 @@ Error in command line arguments
 
 		)
 );
-
 
 # Read buildCounter
 my $buildCounter;

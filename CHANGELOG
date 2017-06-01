@@ -1,2 +1,5 @@
+2017-06-01 L. Rochette <lrochette@datical.com>
+ * 1.2.0.35: added deployPackager action
+
 2017-05-12  L. Rochette <lrochette@datical.com>
  * 1.1.0.1: transform to PluginLite format

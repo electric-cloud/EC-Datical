@@ -16,4 +16,5 @@ if ($osIsWindows) {
   $hammerPath='$[daticalInstallPath]/hammer';
 }
 
-system($hammerPath . ' --project \"$[daticalProjectPath]\" --drivers \"$[daticalPluginsPath]\" forecast \"$[daticalDeploymentStep]\"');
+system($hammerPath . ' --project \"$[daticalProjectPath]\" groovy ' .
+        'deployPackager.groovy pipeline=\"$[daticalPipeline]\" $[options]');
