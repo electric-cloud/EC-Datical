@@ -6,7 +6,7 @@ use File::Copy;
 #
 #############################################################################
 
-$[/plugins/EC-Admin/project/perlHeaderJSON]
+$[/plugins/EC-Admin/project/scripts/perlHeaderJSON]
 
 copy ('$[/myJob/deployReport]', ".") || die ("cannot copy the deploy Report: $!");
 
@@ -23,4 +23,4 @@ if (getP('/myPipelineStageRuntime/projectName')) { # Add to Stage summary if run
         "<html><a href=\"/commander/jobSteps/$[jobStepId]/deployReport.html">Datical Deploy Report</a></html");
 }
 
-$[/plugins/EC-Admin/project/perlLibJSON]
+$[/plugins/EC-Admin/project/scripts/perlLibJSON]
