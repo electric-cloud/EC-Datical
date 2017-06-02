@@ -20,7 +20,7 @@ $ec->setProperty ("summary", "<html>&#160;&#160;&#160;<a href=\"deployReport.htm
 # Add report to Stage sumary if started from  a pipeline
 if (getP('/myPipelineStageRuntime/projectName')) { # Add to Stage summary if running from a pipeline
     $ec->setProperty("/myPipelineStageRuntime/ec_summary/Datical Deploy Report",
-        "<html><a href=\"/commander/jobSteps/$[jobStepId]/deployReport.html">Datical Deploy Report</a></html");
+        "<html><a href=\"/commander/jobSteps/$[jobStepId]/deployReport.html\">Datical Deploy Report</a></html");
 }
 
 $[/plugins/EC-Admin/project/scripts/perlLibJSON]
