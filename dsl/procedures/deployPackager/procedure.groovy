@@ -41,7 +41,9 @@ procedure 'deployPackager',
       step 'deployPackager',
         description: '',
         command: new File(pluginDir + "/dsl/procedures/deployPackager/steps/deployPackager.pl").text,
-        postProcessor: '',
+        postProcessor: 'postp',
         resourceName: '$[resource]',
-        shell: 'ec-perl'
+        shell: 'ec-perl',
+        workingDirectory: '$[daticalProjectPath]'
+
 }
