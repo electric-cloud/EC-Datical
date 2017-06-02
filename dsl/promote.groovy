@@ -18,6 +18,11 @@ project pluginName, {
 		property 'deploy', value: new File(pluginDir + "/dsl/properties/postp/deploy.pl").text
 		property 'forecast', value: new File(pluginDir + "/dsl/properties/postp/forecast.pl").text
 	}
+	property 'Datical', {
+		property 'installationDir', value: 'C:\\apps\\DaticalDB'
+		property 'daticalProjectName', value: 'ECloudIntegrationDemo'
+		property 'resource', value: 'daticalWindows'
+	}
 
 	loadProcedures(pluginDir, pluginKey, pluginName)
 }
