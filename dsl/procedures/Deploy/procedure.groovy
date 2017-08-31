@@ -27,6 +27,18 @@ E.g., C:\\Users\\Administrator\\DaticalDB\\plugins''',
     required: '1',
     type: 'entry'
 
+  formalParameter 'daticalPipeline',
+    defaultValue: '',
+    description: 'The optional name of the Datical pipeline',
+    required: '0',
+    type: 'entry'
+
+    formalParameter 'daticalLabels',
+      defaultValue: '',
+      description: 'The optional comma separated list of labels to deploy',
+      required: '0',
+      type: 'entry'
+
   formalParameter 'resource',
     defaultValue: 'local',
     description: 'The resource where Datical is installed',

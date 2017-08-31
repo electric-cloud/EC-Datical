@@ -1,3 +1,6 @@
+2017-08-28 L. Rochette <lrochette@datical.com>
+ * 1.2.1.68: added labels and pipeline options and parameters
+
 2017-06-02 L. Rochette <lrochette@datical.com>
  * 1.2.0.61: added deployPackager action
 
