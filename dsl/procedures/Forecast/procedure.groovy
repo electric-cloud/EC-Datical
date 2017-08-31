@@ -27,6 +27,12 @@ E.g., C:\\Users\\Administrator\\DaticalDB\\plugins''',
     required: '1',
     type: 'entry'
 
+    formalParameter 'daticalLabels',
+      defaultValue: '',
+      description: 'The optional comma separated list of labels to deploy',
+      required: '0',
+      type: 'entry'
+
   formalParameter 'resource',
     defaultValue: 'local',
     description: 'The resource where Datical is installed',
@@ -38,7 +44,7 @@ E.g., C:\\Users\\Administrator\\DaticalDB\\plugins''',
     command: new File(pluginDir + "/dsl/procedures/Forecast/steps/Forecast.pl").text,
     postProcessor: 'postp --loadProperty /myProject/postp/forecast',
     resourceName: '$[resource]',
-    shell: ''
+    shell: 'ec-perl'
 
   step 'copyReportToWorkspace',
     command: new File(pluginDir + "/dsl/procedures/Forecast/steps/copyReportToWorkspace.pl").text,
