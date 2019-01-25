@@ -10,6 +10,7 @@ def pluginKey = getProject("/plugins/$pluginName/project").pluginKey
 def pluginDir = getProperty("/server/settings/pluginsDirectory").value + "/" + pluginName
 
 project pluginName, {
+	property 'ec_icon', value: 'images/icon-plugin.svg'
 
 	description = 'ElectricFlow integration with DaticalDB.'
 	ec_visibility = 'pickListOnly'
